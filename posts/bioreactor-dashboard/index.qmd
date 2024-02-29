@@ -8,7 +8,8 @@ image: "bioreactor-simulator-dashboard.jpg"
 
 # Summary
 
-An [online dashboard](https://envbioprom.shinyapps.io/bioreactor-dashboard/) developed using Python and Shiny for Python was developed. This dashboard consists of a web simulator that shows the effectiveness of the proposed treatment for a wastewater rich in ethanolamine. 
+An [online dashboard](https://envbioprom.shinyapps.io/bioreactor-dashboard/) developed using Python and Shiny for Python was developed. 
+This dashboard consists of a web simulator that shows the effectiveness of the proposed treatment for a wastewater rich in ethanolamine.  
 
 The dashboard shows the effluent from each unit proposed in the treatment train, and also includes an estimation of the capital and operational expenses that would be incurred for treating such wastewater.
 
@@ -36,15 +37,10 @@ The adjustable parameters to evaluate the treatment proposed are as follows:
   - UASB
   - Partial nitrification
   - Anammox
-- Solids Retention Time (SRT) (in d-1)
 - Concentration of oxygen of the partial nitrification reactor (in mg/L)
 
 #### Influent concentrations:
   - Ethanolamine
-  - Ammonium
-  - Nitrite
-  - Nitrate
-  - Inorganic carbon
 
 The user can define on the left handside the values for each one of the parameters defined and the model will run a simulation to reach steady state.
 The figure will then plot the concentrations in the influent and in the effluent of each unit proposed in the treatment train.
@@ -53,7 +49,7 @@ The figure will then plot the concentrations in the influent and in the effluent
 
 This code was developed in Python and the dashboard was created using Shiny for Python.
 
-Firstly, the code containing the bioreactor model is wrote in a modular way and can be executed by runnung the `run_simulation.py` file. 
+Firstly, the code containing the bioreactor model is wrote in a modular way and can be executed by running the `run_simulation.py` file. 
 
 The code is then executed using this workflow
 
