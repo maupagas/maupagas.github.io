@@ -1,0 +1,16 @@
+{
+  "hash": "d69272b7a38131116ce6d2102c84c17d",
+  "result": {
+    "markdown": "---\ntitle: \"Post With Plot\"\nauthor: \"MPG\"\ndate: \"2024-02-14\"\ncategories: [news, code, analysis]\nimage: \"image.jpg\"\n---\n\n\nThis is a post with a plot.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(mtcars$mpg)\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
