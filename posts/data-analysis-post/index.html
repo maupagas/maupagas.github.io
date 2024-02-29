@@ -230,8 +230,6 @@ ga('send', {
   <li><a href="#number-of-hospitalizations" id="toc-number-of-hospitalizations" class="nav-link" data-scroll-target="#number-of-hospitalizations"><span class="header-section-number">1.4.2</span> Number of hospitalizations</a></li>
   <li><a href="#number-of-deaths" id="toc-number-of-deaths" class="nav-link" data-scroll-target="#number-of-deaths"><span class="header-section-number">1.4.3</span> Number of deaths</a></li>
   </ul></li>
-  <li><a href="#summary-table-of-totals" id="toc-summary-table-of-totals" class="nav-link" data-scroll-target="#summary-table-of-totals"><span class="header-section-number">1.5</span> Summary table of totals</a></li>
-  <li><a href="#time-evolution-of-daily-cases-curve" id="toc-time-evolution-of-daily-cases-curve" class="nav-link" data-scroll-target="#time-evolution-of-daily-cases-curve"><span class="header-section-number">1.6</span> Time evolution of daily cases curve</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -393,12 +391,11 @@ Warning
 <section id="clean-duplicate-eids" class="level3" data-number="1.2.2">
 <h3 data-number="1.2.2" class="anchored" data-anchor-id="clean-duplicate-eids"><span class="header-section-number">1.2.2</span> Clean Duplicate EIDs</h3>
 <p>After recoding lineages and fixing the records that were considered as invalid, the next step consists of cleaning the data by removing all the duplicates.</p>
-<p>Firstly, We check the number of duplicate IDs appearing in the database. This is shown in <strong>?@tbl-duplicate-ids-check</strong> or Table @ref(tab:duplicate-ids-check):</p>
-<div class="cell">
+<p>Firstly, We check the number of duplicate IDs appearing in the database. This is shown in <strong>?@tbl-duplicate-ids-check</strong>:</p>
+<div class="cell" data-tab-cap="Number of records per ID number of the 10 most repeated records in the database.">
 <div class="cell-output-display">
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:100%; overflow-x: scroll; width:100%; ">
 <table class="table table-striped table-hover table-sm small" data-quarto-postprocess="true">
-<caption>Number of records per ID number of the 10 most repeated records in the database.</caption>
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">PseudoID</th>
@@ -453,8 +450,8 @@ Warning
 </div>
 </div>
 <p>As we see in the summary table, there are many patients that are repeated in the records (as many as 340 times).</p>
-<p>For example, we can see the different labels for a given patient in Table @ref(tab:patient-multiple-records):</p>
-<div class="cell">
+<p>For example, we can see the different labels for a given patient in <span class="citation" data-cites="tab-patient-multiple-records">@tab-patient-multiple-records</span>:</p>
+<div class="cell" data-tab-cap="Multiple records for the same infection(s) for patient with PseudoID.">
 <div class="cell-output-display">
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:100%; overflow-x: scroll; width:100%; ">
 <table class="table table-striped table-hover table-sm small" data-quarto-postprocess="true">
@@ -883,7 +880,7 @@ Warning
 </div>
 </div>
 </div>
-<p>Another way to visualize better which variant is taking over and when is to visualize this as a percentage. This is show in Figure @ref(fig:lineage-over-time-perc):</p>
+<p>Another way to visualize better which variant is taking over and when is to visualize this as a percentage. This is show in Figure #fig-lineage-over-time-perc:</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -908,7 +905,7 @@ Warning
 </div>
 </div>
 </div>
-<p>As shown in Figure @ref(fig:biweekly-hospitalisations), it is clear that the proportion of people hospitalised from sequenced people is higher than those from people who are not sequenced. Therefore, a direct estimation from the sequenced data only will estimate a higher hospitalisation rate for each variant studied and therefore it is required to adjust for that bias.</p>
+<p>As shown in Figure #fig-biweekly-hospitalisations, it is clear that the proportion of people hospitalised from sequenced people is higher than those from people who are not sequenced. Therefore, a direct estimation from the sequenced data only will estimate a higher hospitalisation rate for each variant studied and therefore it is required to adjust for that bias.</p>
 </section>
 <section id="number-of-deaths" class="level3" data-number="1.4.3">
 <h3 data-number="1.4.3" class="anchored" data-anchor-id="number-of-deaths"><span class="header-section-number">1.4.3</span> Number of deaths</h3>
@@ -923,256 +920,11 @@ Warning
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="summary-table-of-totals" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="summary-table-of-totals"><span class="header-section-number">1.5</span> Summary table of totals</h2>
-<p>A table summary for variants and reason for sequencing is shown in Table @ref(tab:table-by-variant):</p>
-<div class="cell">
-<div class="cell-output-display">
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:100%; overflow-x: scroll; width:100%; ">
-<table class="table table-striped table-hover table-sm small" data-quarto-postprocess="true">
-<caption>Number of cases, hospitalisations and death per lineage and reason for sequencing. NAs correspond to the values of not sequenced people.</caption>
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">Reason for Sequencing</th>
-<th data-quarto-table-cell-role="th" style="text-align: center; position: sticky; top: 0; background-color: #FFFFFF;">Lineage</th>
-<th data-quarto-table-cell-role="th" style="text-align: center; position: sticky; top: 0; background-color: #FFFFFF;">Number of cases</th>
-<th data-quarto-table-cell-role="th" style="text-align: center; position: sticky; top: 0; background-color: #FFFFFF;">Number of hospitalisations</th>
-<th data-quarto-table-cell-role="th" style="text-align: center; position: sticky; top: 0; background-color: #FFFFFF;">Number of deaths</th>
-<th data-quarto-table-cell-role="th" style="text-align: center; position: sticky; top: 0; background-color: #FFFFFF;">Number of ICUs</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left; position: absolute;">Community Surveillance</td>
-<td style="text-align: center;">B.1.1.3</td>
-<td style="text-align: center;">104</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; position: absolute;">Community Surveillance</td>
-<td style="text-align: center;">B.1.1.7</td>
-<td style="text-align: center;">1,357</td>
-<td style="text-align: center;">66</td>
-<td style="text-align: center;">13</td>
-<td style="text-align: center;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; position: absolute;">Community Surveillance</td>
-<td style="text-align: center;">B.1.351</td>
-<td style="text-align: center;">3,785</td>
-<td style="text-align: center;">181</td>
-<td style="text-align: center;">25</td>
-<td style="text-align: center;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; position: absolute;">Community Surveillance</td>
-<td style="text-align: center;">B.1.525</td>
-<td style="text-align: center;">936</td>
-<td style="text-align: center;">27</td>
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; position: absolute;">Community Surveillance</td>
-<td style="text-align: center;">B.1.617.1</td>
-<td style="text-align: center;">472</td>
-<td style="text-align: center;">31</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; position: absolute;">Community Surveillance</td>
-<td style="text-align: center;">B.1.617.2</td>
-<td style="text-align: center;">88,407</td>
-<td style="text-align: center;">4,945</td>
-<td style="text-align: center;">309</td>
-<td style="text-align: center;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; position: absolute;">Community Surveillance</td>
-<td style="text-align: center;">BA.1</td>
-<td style="text-align: center;">40,805</td>
-<td style="text-align: center;">2,092</td>
-<td style="text-align: center;">141</td>
-<td style="text-align: center;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; position: absolute;">Community Surveillance</td>
-<td style="text-align: center;">BA.2</td>
-<td style="text-align: center;">30,186</td>
-<td style="text-align: center;">1,488</td>
-<td style="text-align: center;">63</td>
-<td style="text-align: center;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; position: absolute;">Community Surveillance</td>
-<td style="text-align: center;">BA.4</td>
-<td style="text-align: center;">692</td>
-<td style="text-align: center;">30</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; position: absolute;">Community Surveillance</td>
-<td style="text-align: center;">BA.5</td>
-<td style="text-align: center;">15,939</td>
-<td style="text-align: center;">873</td>
-<td style="text-align: center;">23</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; position: absolute;">Community Surveillance</td>
-<td style="text-align: center;">BE.1</td>
-<td style="text-align: center;">486</td>
-<td style="text-align: center;">16</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; position: absolute;">Community Surveillance</td>
-<td style="text-align: center;">BM.1</td>
-<td style="text-align: center;">203</td>
-<td style="text-align: center;">13</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; position: absolute;">Community Surveillance</td>
-<td style="text-align: center;">BQ.1</td>
-<td style="text-align: center;">313</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; position: absolute;">Community Surveillance</td>
-<td style="text-align: center;">NA</td>
-<td style="text-align: center;">875,608</td>
-<td style="text-align: center;">28,354</td>
-<td style="text-align: center;">967</td>
-<td style="text-align: center;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; position: absolute;">ICU/HDU/Death</td>
-<td style="text-align: center;">B.1.351</td>
-<td style="text-align: center;">124</td>
-<td style="text-align: center;">58</td>
-<td style="text-align: center;">15</td>
-<td style="text-align: center;">124</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; position: absolute;">ICU/HDU/Death</td>
-<td style="text-align: center;">B.1.617.2</td>
-<td style="text-align: center;">492</td>
-<td style="text-align: center;">247</td>
-<td style="text-align: center;">87</td>
-<td style="text-align: center;">492</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; position: absolute;">ICU/HDU/Death</td>
-<td style="text-align: center;">BA.5</td>
-<td style="text-align: center;">121</td>
-<td style="text-align: center;">77</td>
-<td style="text-align: center;">11</td>
-<td style="text-align: center;">121</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; position: absolute;">Travel</td>
-<td style="text-align: center;">B.1.617.2</td>
-<td style="text-align: center;">1,389</td>
-<td style="text-align: center;">279</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; position: absolute;">Travel</td>
-<td style="text-align: center;">BA.1</td>
-<td style="text-align: center;">4,891</td>
-<td style="text-align: center;">200</td>
-<td style="text-align: center;">12</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; position: absolute;">Travel</td>
-<td style="text-align: center;">BA.2</td>
-<td style="text-align: center;">4,637</td>
-<td style="text-align: center;">235</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; position: absolute;">Travel</td>
-<td style="text-align: center;">BA.4</td>
-<td style="text-align: center;">194</td>
-<td style="text-align: center;">10</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; position: absolute;">Travel</td>
-<td style="text-align: center;">BA.5</td>
-<td style="text-align: center;">3,630</td>
-<td style="text-align: center;">171</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; position: absolute;">Travel</td>
-<td style="text-align: center;">BE.1</td>
-<td style="text-align: center;">120</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; position: absolute;">Travel</td>
-<td style="text-align: center;">NA</td>
-<td style="text-align: center;">101,211</td>
-<td style="text-align: center;">3,613</td>
-<td style="text-align: center;">49</td>
-<td style="text-align: center;">NA</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-</div>
-</div>
-<p>From summary Table @ref(tab:table-by-variant) a weighted average of the hospitalisation and death rate for each variant can be obtained and then compared it to the non-sequenced data. Given that the number of records of the community surveillance is substantially much higher than the rest of the groups, it could be advisable to use only community surveillance data only.</p>
-<p>It can be seen that some of the records labeled as ICU did not match their hospitalisation flag. Therefore this needs to be corrected in the raw data as well.</p>
-</section>
-<section id="time-evolution-of-daily-cases-curve" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="time-evolution-of-daily-cases-curve"><span class="header-section-number">1.6</span> Time evolution of daily cases curve</h2>
-<p>A final check that we are looking at similar data sources can be a comparison between the totals reported during the pandemic and the cases recorded after cleaning the data in this study. This is show in Figure @ref(fig:comparison-with-estijaba):</p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="index_files/figure-html/comparison-with-estijaba-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Number of cases over time for two different data sources, namely this study and totals reported by Estijaba.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p>Since the number of sequenced for the delta variant appears to be somehow very large, we can plot the number of cases per variant over time. This is shown in Figure @ref(fig:comparison-with-estijaba-lineages):</p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="index_files/figure-html/comparison-with-estijaba-lineages-1.png" class="img-fluid figure-img" width="672"></p>
-<figcaption class="figure-caption">Number of cases over time for two different data sources, namely this study and totals reported by Estijaba.</figcaption>
-</figure>
-</div>
-</div>
-</div>
 
 
 <!-- -->
 
+</section>
 </section>
 </section>
 
