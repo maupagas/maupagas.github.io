@@ -2,54 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://maupagas.github.io/resume.html</loc>
-    <lastmod>2024-02-29T11:36:16.858Z</lastmod>
+    <lastmod>2024-03-18T18:00:44.802Z</lastmod>
   </url>
   <url>
     <loc>https://maupagas.github.io/Mauricio-CV.html</loc>
-    <lastmod>2024-02-29T11:36:15.846Z</lastmod>
+    <lastmod>2024-03-18T18:00:43.701Z</lastmod>
   </url>
   <url>
     <loc>https://maupagas.github.io/mauricio-quarto-blog.html</loc>
-    <lastmod>2024-02-29T11:36:14.766Z</lastmod>
+    <lastmod>2024-03-18T18:00:42.485Z</lastmod>
   </url>
   <url>
     <loc>https://maupagas.github.io/Mauricio-CV-DS.html</loc>
-    <lastmod>2024-02-29T11:36:12.858Z</lastmod>
+    <lastmod>2024-03-18T18:00:40.261Z</lastmod>
   </url>
   <url>
     <loc>https://maupagas.github.io/posts/bioreactor-dashboard/index.html</loc>
-    <lastmod>2024-02-29T11:36:11.630Z</lastmod>
+    <lastmod>2024-03-18T18:00:38.933Z</lastmod>
   </url>
   <url>
     <loc>https://maupagas.github.io/posts/vaccine-allocation-simulation/index.html</loc>
-    <lastmod>2024-02-29T11:36:10.822Z</lastmod>
+    <lastmod>2024-03-18T18:00:38.033Z</lastmod>
   </url>
   <url>
     <loc>https://maupagas.github.io/posts/covid19-impact-expo20/index.html</loc>
-    <lastmod>2024-02-29T11:36:08.330Z</lastmod>
+    <lastmod>2024-03-18T18:00:35.332Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maupagas.github.io/posts/icr-kaggle/index.html</loc>
+    <lastmod>2024-03-18T18:00:33.784Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maupagas.github.io/posts/icr-kaggle/index_old.html</loc>
+    <lastmod>2024-03-18T18:00:32.460Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maupagas.github.io/posts/icr-kaggle/icr-identifying-age-related-conditions-xgboost.html</loc>
+    <lastmod>2024-03-18T18:00:35.004Z</lastmod>
   </url>
   <url>
     <loc>https://maupagas.github.io/posts/data-analysis-post/index.html</loc>
-    <lastmod>2024-02-29T11:36:10.530Z</lastmod>
+    <lastmod>2024-03-18T18:00:37.689Z</lastmod>
   </url>
   <url>
     <loc>https://maupagas.github.io/posts/online-simulator-covid19/index.html</loc>
-    <lastmod>2024-02-29T11:36:11.106Z</lastmod>
+    <lastmod>2024-03-18T18:00:38.393Z</lastmod>
   </url>
   <url>
     <loc>https://maupagas.github.io/posts/quantification-yields-atp/index.html</loc>
-    <lastmod>2024-02-29T11:36:12.018Z</lastmod>
+    <lastmod>2024-03-18T18:00:39.373Z</lastmod>
   </url>
   <url>
     <loc>https://maupagas.github.io/projects.html</loc>
-    <lastmod>2024-02-29T11:36:14.138Z</lastmod>
+    <lastmod>2024-03-18T18:00:41.717Z</lastmod>
   </url>
   <url>
     <loc>https://maupagas.github.io/index.html</loc>
-    <lastmod>2024-02-29T11:36:15.022Z</lastmod>
+    <lastmod>2024-03-18T18:00:42.777Z</lastmod>
   </url>
   <url>
     <loc>https://maupagas.github.io/about.html</loc>
-    <lastmod>2024-02-29T11:36:16.602Z</lastmod>
+    <lastmod>2024-03-18T18:00:44.493Z</lastmod>
   </url>
 </urlset>
