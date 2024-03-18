@@ -1,0 +1,17 @@
+---
+title: "ICR Age-Related Conditions Kaggle Competition"
+author: "Mauricio Patón"
+date: "2022-03-10"
+categories: [machine learning, code, shiny]
+image: "icr-competition.png"
+---
+
+This is a post to explain how a simulation conducted to evaluate the impact of infected visitors to international large events was conducted.
+
+This work was highlighted in local media showcasing the impact of modelling in the decision-making for Expo2020 in [this article] and [this article].
+In addition, a [MoU between Department of Health of Abu Dhabi and Khalifa University]() was signed at Expo.
+
+![Template of the online model simulator for COVID-19](omicron-variants-simulation.jpg){#fig-model-simulator}
+
+
+The model simulator can be seen in @fig-model-simulator.
